@@ -14,12 +14,12 @@ $c=0;
       <div class="card">
           <div class="card-body">
               <h4>{{$data[$c]->itemgroupname}}</h4>
-              <h3><i class="bi bi-diagram-2" style="font-size: larger;"></i></h3>
+              <h3><i class="bi bi-car-front-fill"></i></h3>
           </div>
       </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>
   <?php $c++?>
   <div class="row text-center d-flex align-items-center justify-content-center">
     <div class="col-sm-4 text-center">
@@ -27,15 +27,13 @@ $c=0;
         <div class="card">
         <div class="card-body">
             <h4>{{$data[$c]->itemgroupname}}</h4>
-            <h3><i class="bi bi-diagram-2" style="font-size: larger;"></i></h3>
+            <h3><i class="bi bi-tools"></i></h3>
         </div>
     </div>
   </div>
-</div>
 </a>
-
-  @endwhile
-   
-
 </div>
+@endwhile
+
+  </div>
 @endsection

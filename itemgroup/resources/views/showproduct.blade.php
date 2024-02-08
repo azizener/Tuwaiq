@@ -7,7 +7,8 @@
         <div class="card-body">
             <div class="row mt-2">
                 <div class="col-sm-3">
-                    <img src="#" alt="">
+                    <img src="/image/{{$row->image}}" width="100%" height="100%" alt="not">
+                   
                 </div>
                 <div class="col-sm-9 text-start">
                 <h1 class="alert alert-info text-dark">{{$row->itemname}}</h1>

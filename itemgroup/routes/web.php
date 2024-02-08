@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemsController;
 
+
+
+route::get('/api', [ItemsController::class, 'api'])->name('api');
+Route::get('/cart',[ItemsController::class,'Showcartpage'])->name('cart')->middleware('auth');;
+
 Route::get('/addtocart/{id}',[ItemsController::class,'addtocart'])->name('addtocart');
 
 Route::get('/showproduct/{id}',[ItemsController::class,'showproduct'])->name('showproduct');
